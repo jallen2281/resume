@@ -1,0 +1,21 @@
+# Copy into your aiCluster repo alongside your other ArgoCD Applications.
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: resume
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/jallen2281/resume.git   # use git@github.com:jallen2281/resume.git if your ArgoCD uses SSH creds
+    targetRevision: main
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: resume
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

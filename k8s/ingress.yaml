@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: resume
+  annotations:
+    # If cert-manager is installed, uncomment and set your ClusterIssuer name:
+    # cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: public   # MicroK8s ingress addon default; change if you use another controller
+  rules:
+    - host: resume.kegbot.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: resume
+                port:
+                  name: http
+  # tls:
+  #   - hosts: [resume.kegbot.net]
+  #     secretName: resume-kegbot-net-tls

@@ -1,0 +1,212 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Jared A. Allen",
+    "label": "Critical Infrastructure Engineer | Data Center Monitoring, Controls & Physical Security",
+    "email": "jallen2281@gmail.com",
+    "url": "https://resume.kegbot.net",
+    "summary": "Hands-on infrastructure engineer with 15 years in data center operations at Liquid Web, building the hardware, software and physical security systems that keep three facilities monitored and secure. Designed custom circuit boards and deployed 10,000+ sensors of my own design, then built the web platforms, APIs and time-series monitoring that turn that data into something operations staff use every day. Pairs Linux/Windows systems administration (RHCSA) with electronics design, 3D CAD and a prior career as a Michigan State-Certified Master Automotive Technician, so I can take a problem from circuit board to dashboard to physical install.",
+    "location": {
+      "city": "Lansing area",
+      "region": "MI",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "jallen2281",
+        "url": "https://github.com/jallen2281"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Liquid Web (Nexcess)",
+      "location": "Lansing, MI",
+      "position": "Critical Infrastructure IT Administrator / Engineer",
+      "startDate": "2013",
+      "summary": "Engineer, build and run monitoring, physical security and facility systems across three data centers.",
+      "highlights": [
+        "Designed and deployed 10,000+ custom 1-Wire temperature sensors across three data centers, running 700–900 sensors per bus, far beyond typical 1-Wire limits, through careful voltage tuning, noise reduction, network design and cable standards.",
+        "Redesigned RJ45 1-Wire splitters to replace a low-quality, overseas-only part, moving production to a US manufacturer and adding an onboard slot for a DS2431 address-memory chip or an extra sensor.",
+        "Designing flexible-circuit sensor strips with an onboard DS2431 that stores sensor order at manufacture, removing manual sensor mapping and replacing a commercial product with long lead times.",
+        "Deploying LoRaWAN battery sensor strings to monitor 16 GPU racks for a major customer deployment, and expanding electrical power monitoring to a new 800A panel and sub-panel through the building management system.",
+        "Built and maintain a multi-facility temperature mapping platform: each building has its own floor map and settings, with live click-through readings from every sensor and Google sign-in for staff.",
+        "Built the time-series stack behind it (InfluxDB, Prometheus, Grafana) for historical trends, plus sensor-health logging, an offline-sensor view and configurable temperature and status alerts.",
+        "Reverse engineered Foobot air quality monitors to reach the vendor API; the vendor then granted official lifetime keys. Built a scheduler and cache that spread the limited daily quota across 24 hours for continuous humidity, VOC and particulate readings on the map.",
+        "Reverse engineered Airthings Wave Mini sensors over Bluetooth LE, with Node.js collectors on Ubuntu (Raspberry Pi and Mac mini hosts). Readings feed the map and an entrance display that rotates through each aisle's conditions every 3 seconds.",
+        "Run a fleet of 27 wallboard displays across 3 facilities with Balena and Anthias, showing facility maps and critical operational data; handle deployments, updates and troubleshooting.",
+        "Designed and built a key and badge tracking system now at 3 facilities: 7 cabinets with separate permission levels track about 200 building keys, access badges and vehicle keys from one searchable web interface. Badge-in unlocks only for authorized users; iButton sockets log every removal and return. Designed the cabinets, 3D-printed key holders and software, which runs as Docker services with automatic failover.",
+        "Install and maintain access control and door hardware (badge readers, electric hinges, closers, locks, door position sensors) and IP cameras across all facilities; leading a multi-site rekey to restricted keyways, including vendor selection and purchasing.",
+        "Administer Linux and Windows servers, databases and clustered services supporting facility systems, including building management servers and the IP and industrial control networks they run on.",
+        "Design custom parts in Fusion 360 and run in-house 3D printing for data center hardware; built custom project management software to track multi-site infrastructure projects."
+      ]
+    },
+    {
+      "name": "Liquid Web (Nexcess)",
+      "location": "Lansing, MI",
+      "position": "Guardian Backup Product Manager",
+      "startDate": "2012",
+      "endDate": "2013",
+      "highlights": [
+        "Managed and improved Liquid Web's Guardian backup product for Linux and Windows servers through custom automation and a control and alerting interface built on Guardian's API."
+      ]
+    },
+    {
+      "name": "Liquid Web (Nexcess)",
+      "location": "Lansing, MI",
+      "position": "Support Technician",
+      "startDate": "2011",
+      "endDate": "2013",
+      "highlights": [
+        "Diagnosed and repaired production servers with high-availability requirements; supported customers by phone, email and live chat."
+      ]
+    },
+    {
+      "name": "Suburban Chrysler Jeep Dodge; Bob Saks Dodge",
+      "position": "Master Automotive Technician",
+      "summary": "Earlier career before moving into IT.",
+      "highlights": [
+        "Michigan State-Certified Master Technician and Level 4 Chrysler-certified technician; the dealership's only Fiat-certified master technician.",
+        "Member of the heavy engine and transmission team for major engine and drivetrain overhauls.",
+        "Handled most dealership accessory installs, including electrical integration and custom fitment.",
+        "Diagnosed and repaired air conditioning systems, including refrigerant handling, compressors and climate controls."
+      ]
+    },
+    {
+      "name": "XtremeCuztoms.com",
+      "position": "Owner / System Administrator",
+      "highlights": [
+        "Ran a small hosting company providing virtual servers, DNS, game servers and website design to local businesses."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Self-hosted Kubernetes cluster",
+      "description": "4-node MicroK8s cluster on ARM hardware with MicroCeph storage and ArgoCD GitOps deployments, hosting PostgreSQL (Supabase), authoritative PowerDNS and several custom web apps — including this resume site.",
+      "keywords": [
+        "Kubernetes",
+        "MicroK8s",
+        "Ceph",
+        "ArgoCD",
+        "PostgreSQL",
+        "PowerDNS"
+      ]
+    },
+    {
+      "name": "Kegbot smart kegerator",
+      "description": "Linux-powered kegerator with temperature and keg-volume tracking, RFID user authentication to pour, and an LCD that greets each user by name.",
+      "keywords": [
+        "Linux",
+        "RFID",
+        "Sensors",
+        "Embedded"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Red Hat Certified System Administrator (RHCSA)",
+      "issuer": "Red Hat"
+    },
+    {
+      "name": "Michigan State-Certified Master Automotive Technician",
+      "issuer": "State of Michigan"
+    },
+    {
+      "name": "Level 4 Chrysler-Certified Technician; Fiat-Certified Master Technician",
+      "issuer": "Chrysler"
+    },
+    {
+      "name": "EPA Section 609 Certified (vehicle A/C refrigerant)",
+      "issuer": "U.S. EPA"
+    },
+    {
+      "name": "Eagle Scout",
+      "issuer": "Boy Scouts of America"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Washtenaw Community College",
+      "area": "Automotive Technology",
+      "studyType": "Michigan Motor Vehicle Mechanic Certificate"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Monitoring & IoT",
+      "keywords": [
+        "1-Wire sensor networks",
+        "Bluetooth LE",
+        "LoRaWAN",
+        "InfluxDB",
+        "Prometheus",
+        "Grafana",
+        "Balena",
+        "Anthias",
+        "Raspberry Pi",
+        "API reverse engineering"
+      ]
+    },
+    {
+      "name": "Hardware & Fabrication",
+      "keywords": [
+        "Circuit board design (rigid & flex)",
+        "Electronics assembly & soldering",
+        "Fusion 360 CAD",
+        "3D printing (PETG, ASA)"
+      ]
+    },
+    {
+      "name": "Systems Administration",
+      "keywords": [
+        "RHEL / AlmaLinux / CentOS",
+        "Ubuntu",
+        "Windows Server",
+        "Clustered & redundant services",
+        "Docker",
+        "Kubernetes",
+        "Ansible",
+        "MySQL / MariaDB",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Development",
+      "keywords": [
+        "Node.js",
+        "Python",
+        "PHP",
+        "JavaScript",
+        "C / Arduino",
+        "Perl",
+        "Bash",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Physical Security",
+      "keywords": [
+        "Access control & badge systems",
+        "Badge readers",
+        "Electric hinges, closers & locks",
+        "Door position sensors",
+        "Key control",
+        "IP cameras",
+        "Crestron"
+      ]
+    },
+    {
+      "name": "Facilities & Mechanical",
+      "keywords": [
+        "Power metering",
+        "Building management systems",
+        "Cooling & airflow monitoring",
+        "Electrical & mechanical diagnostics",
+        "Cisco network training"
+      ]
+    }
+  ]
+}
