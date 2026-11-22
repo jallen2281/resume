@@ -8,4 +8,4 @@ resources:
   - ingress.yaml
 images:
   - name: ghcr.io/jallen2281/resume
-    newTag: latest   # CI replaces this with the commit SHA on every build
+    newTag: 9b938f3
