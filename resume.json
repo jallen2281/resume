@@ -23,7 +23,7 @@
     {
       "name": "Liquid Web (Nexcess)",
       "location": "Lansing, MI",
-      "position": "Critical Infrastructure IT Administrator / Engineer",
+      "position": "Infrastructure Administrator (Infrastructure IT & Facilities)",
       "startDate": "2013",
       "summary": "Engineer, build and run monitoring, physical security and facility systems across three data centers.",
       "highlights": [
@@ -39,6 +39,7 @@
         "Designed and built a key and badge tracking system now at 3 facilities: 7 cabinets with separate permission levels track about 200 building keys, access badges and vehicle keys from one searchable web interface. Badge-in unlocks only for authorized users; iButton sockets log every removal and return. Designed the cabinets, 3D-printed key holders and software, which runs as Docker services with automatic failover.",
         "Install and maintain access control and door hardware (badge readers, electric hinges, closers, locks, door position sensors) and IP cameras across all facilities; leading a multi-site rekey to restricted keyways, including vendor selection and purchasing.",
         "Administer Linux and Windows servers, databases and clustered services supporting facility systems, including building management servers and the IP and industrial control networks they run on.",
+        "Patch and update Linux and Windows servers and camera NVR systems (Milestone and Wave) every month as part of infrastructure audit reports.",
         "Design custom parts in Fusion 360 and run in-house 3D printing for data center hardware; built custom project management software to track multi-site infrastructure projects."
       ]
     },
