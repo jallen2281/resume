@@ -8,4 +8,4 @@ resources:
   - ingress.yaml
 images:
   - name: ghcr.io/jallen2281/resume
-    newTag: e4d3a37
+    newTag: 2ec4482
