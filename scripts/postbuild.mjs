@@ -18,6 +18,12 @@ head.push('<style>.pdf-link{position:fixed;top:1rem;right:1rem;padding:.45rem .8
 html = html.replace(/<time datetime="(\d{4})">[^<]*<\/time>/g, '<time datetime="$1">$1</time>');
 if (/<time datetime="\d{4}">[A-Za-z]/.test(html)) throw new Error('postbuild: year-only date still shows a month');
 
+// The theme's <time-duration> element computes tenure in the browser. With year-only dates it
+// counts from January 1st and adds overlapping roles together, so it overstates tenure. Remove it.
+html = html.replace(/<time-duration[^>]*><\/time-duration>/g, '');
+html = html.replace(/<script>[^<]*customElements\.define\('time-duration'[^<]*<\/script>/g, '');
+if (html.includes('time-duration dates=')) throw new Error('postbuild: tenure element still present');
+
 html = html.replace('</head>', head.join('\n') + '\n</head>');
 html = html.replace(/<body([^>]*)>/, '<body$1>\n<a class="pdf-link" href="Jared-Allen-Resume.pdf" download>Download PDF</a>');
 
